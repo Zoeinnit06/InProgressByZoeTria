@@ -1,79 +1,79 @@
-nav {
-  margin: 27px auto 0;
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: darkred;
+  font-family: Arial;
+}
 
-  position: relative;
-  width: 590px;
-  height: 50px;
-  background-color: red;
-  border-radius: 8px;
-  font-size: 0;
-}
-nav a {
-  line-height: 50px;
-  height: 100%;
-  font-size: 15px;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
   color: white;
-  cursor: pointer;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-nav .animation {
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: darkblue;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
   position: absolute;
-  height: 100%;
-  top: 0;
-  z-index: 0;
-  transition: all .5s ease 0s;
-  border-radius: 8px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
-a:nth-child(1) {
-  width: 100px;
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
-a:nth-child(2) {
-  width: 110px;
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
-a:nth-child(3) {
-  width: 100px;
-}
-a:nth-child(4) {
-  width: 160px;
-}
-a:nth-child(5) {
-  width: 120px;
-}
-nav .start-home, a:nth-child(1):hover~.animation {
-  width: 100px;
-  left: 0;
-  background-color: darkred;
-}
-nav .start-about, a:nth-child(2):hover~.animation {
-  width: 110px;
-  left: 100px;
-  background-color: darkred;
-}
-nav .start-blog, a:nth-child(3):hover~.animation {
-  width: 100px;
-  left: 210px;
-  background-color: darkred;
-}
-nav .start-portefolio, a:nth-child(4):hover~.animation {
-  width: 160px;
-  left: 310px;
-  background-color: darkred;
-}
-nav .start-contact, a:nth-child(5):hover~.animation {
-  width: 120px;
-  left: 470px;
-  background-color: darkred;
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 body {
   font-size: 12px;
   font-family: sans-serif;
-  background: lightcoral;
+  background-image: url('download\ \(53\).jpg');
+  background-repeat: repeat;
+  background-size: 1324px 768px;
 }
 h1 {
   text-align: center;
@@ -83,18 +83,4 @@ h1 {
   color: #ecf0f1;
   text-shadow: 2px 2px 4px #000000;
   font-family: 'Cherry Swash', cursive;
-}
-
-p {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-    color: #ecf0f1;
-    font-family: 'Cherry Swash',cursive;
-    font-size: 16px;
-}
-
-span {
-    color: #2BD6B4;
 }
