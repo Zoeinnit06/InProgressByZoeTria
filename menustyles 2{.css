@@ -69,12 +69,12 @@
 }
 
 body {
-  font-size: 12px;
-  font-family: sans-serif;
-  background-image: url('download\ \(53\).jpg');
-  background-repeat: repeat;
-  background-size: 1324px 768px;
-}
+    font-size: 12px;
+    font-family: sans-serif;
+    background-image: url('background.jpg');
+    background-repeat: repeat;
+    background-size: 1324px 768px;
+  }
 h1 {
   text-align: center;
   margin: 40px 0 40px;
